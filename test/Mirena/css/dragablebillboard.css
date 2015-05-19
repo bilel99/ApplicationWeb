@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+#dragablebillboard {
+	margin: 0px auto;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+#billboardbackground {
+	margin: 0px;
+	position: relative;
+	top: 0px;
+}
+#billboardheroes {
+	position: absolute;
+	-webkit-box-shadow: 0px 5px 15px 0px #000;
+	width: 100%;
+	height: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #555;
+}
+#billboardheroes .hero {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.carouselmenu {
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+}
+/* Browser Resets */
+.carouselmenucontainner a:active,
+.carouselcontent a:active {outline: none;}
+.carouselmenu {margin: 0; padding: 0; list-style: none;} 
+
+.carouselcontent {width: 100%; margin: 0; padding: 0;}
+.carouselcontent .carouselmenu > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.carouselcontent .carouselmenu img {
+	max-width: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.carouselmenu:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .carouselmenu {display: block;} 
+* html .carouselmenu {height: 1%;}
+
+
+.carouselcontent {
+	position: relative;
+	zoom: 1;
+	height: 100%;
+}
+.carouselcontent .carouselmenu {
+	zoom: 1;
+	height: 100%;
+}
+.carouselcontent .carouselmenu > li 
+{
+	position: absolute;
+}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.carouselmenucontainner {
+	zoom: 1;
+	position: relative;
+	height: 200px;
+	margin: 0;
+	padding: 100px 0 0 0;
+	overflow: visible;
+}
+.carousel-center-container {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFF;
+	display: block;
+	margin: auto;
+	width: 600px;
+	text-align: center;
+	position: absolute;
+}
+.carousel-center-container h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.carousel-center-container p {
+	font-weight: lighter;
+	color: #999;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+}
+.carousel-info-container {
+	display: block;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 240px;
+}
+.centerbottoncontainer {
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+.centerbottoncontainer img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.content-container {
+	display: block;
+	height: 100%;
+	position: relative;
+}
